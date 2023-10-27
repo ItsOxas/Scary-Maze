@@ -15,11 +15,12 @@ public class FollowCursor : MonoBehaviour
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector2(cursorPos.x, cursorPos.y);
     }
-    void OnCollisionEnter2D(Collision2D coll)
+    void OnCollisionStay2D(Collision2D coll)
     {
-       if (coll.gameObject.name.Contains("Border"))
+       if (coll.gameObject.name.Contains("Path"))
        {
             SceneManager.LoadScene("Menu");   
        }
     }
+
 }
