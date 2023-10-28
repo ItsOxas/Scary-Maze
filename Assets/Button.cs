@@ -7,12 +7,6 @@ using UnityEngine.SceneManagement;
 public class Button : MonoBehaviour
 {
     public string LevelName;
-
-    void Update()
-    {
-        
-    }
-
     public void ButtonPressed()
     { 
         LoadNextLevel();
